@@ -1,0 +1,119 @@
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Book Store</title>
+<link rel="apple-touch-icon" sizes="180x180"
+	href="./favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32"
+	href="./favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16"
+	href="./favicons/favicon-16x16.png">
+<link rel="manifest" href="./favicons/site.webmanifest">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" >
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body onload="funload()">
+    <header>
+		<nav class="navbar navbar-expand-sm bg-dark">
+				<a class="navbar-brand">
+					<!-- The below line can be an image or a h1, either will work -->
+					<img src="logo2.jpg" alt="Google logo" width="60" height="30px">
+				</a>
+				
+				<button style="background-color:white;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				 </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">                
+				<ul class="navbar-nav ml-auto" >
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="CustomerLogin.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="CustomerRegister.html">Register</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-5">
+        <section class="text-center mb-5">
+            <div id="topmid">
+                <h1 class="display-4 font-weight-light text-black">Magic Online Book Store</h1>
+                <p class="lead text-muted">Discover a world of knowledge and inspiration.</p>
+            </div>
+        </section>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center mb-4">
+                <a href="index.html" class="btn btn-outline-primary btn-lg rounded-pill" id="happy">
+                    Start Exploring
+                </a>
+            </div>
+        </div>
+
+        <!-- 增加介绍内容 -->
+        <section class="mb-5">
+            <h2 class="h3 font-weight-light text-dark mb-4">About Our Book Store</h2>
+            <p class="text-muted">
+                Welcome to Magic Online Book Store, your ultimate destination for books of all genres-fiction, non-fiction, fantasy, science, and more. We offer a curated selection of both classic and contemporary titles, ensuring every reader finds something inspiring. Our platform is designed to provide a seamless shopping experience, with fast delivery, digital downloads, and exclusive offers for our loyal customers.
+            </p>
+            <p class="text-muted">
+                Whether you're a student, a professional, or a casual reader, we have books to enrich your mind and spark your imagination. Explore our collections, join our community, and enjoy special promotions, including monthly book clubs and author events. Happy learning and reading!
+            </p>
+            
+        </section>
+
+        <!-- 更多内容以增加页面高度，支持滚动 -->
+        <section class="mb-5">
+            <h2 class="h3 font-weight-light text-dark mb-4">Our Featured Categories</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Fantasy & Magic</h5>
+                            <p class="card-text text-muted">Dive into enchanting worlds of wizards, dragons, and mythical creatures.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Science & Technology</h5>
+                            <p class="card-text text-muted">Explore the latest in science, innovation, and technological advancements.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Classics & Literature</h5>
+                            <p class="card-text text-muted">Rediscover timeless classics and literary masterpieces.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系我们部分 -->
+        <section class="mb-5">
+            <h2 class="h3 font-weight-light text-dark mb-4">Contact Us</h2>
+            <p class="text-muted">
+                Have questions? Reach out to us at <a href="mailto:support@magiconlinestore.com">support@magiconlinestore.com</a> or call us at (123) 456-7890. We’re here to help you find your next great read!
+            </p>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"></script>
+    <script>
+        // Preloader script (corrected typo from "loding" to "loading")
+        var loading = document.getElementById("loading");
+        function funload() {
+            if (loading) {
+                loading.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

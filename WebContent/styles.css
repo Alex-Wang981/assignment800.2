@@ -1,0 +1,190 @@
+* {
+	box-sizing: border-box;
+}
+
+/*index page*/
+body {
+    background-image: url("bgphoto0.jpg");
+    background-size: cover; /* 保持比例，填充整个页面，可能裁剪部分图片 */
+    background-position: center; /* 图片居中显示 */
+    background-repeat: no-repeat; /* 不重复图片 */
+    background-attachment: scroll; /* 背景随页面滚动（允许上下滑动） */
+    min-height: 100vh; /* 确保背景至少覆盖整个视口高度 */
+    margin: 0; /* 移除默认外边距 */
+    padding: 0; /* 移除默认内边距 */
+    font-family: 'Roboto', 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif; /* 优先使用 Roboto，保持兼容性 */
+    color: #333; /* 深灰色文本，易读且简约 */
+}
+
+/* 顶部标题样式 - 优化 #topmid */
+#topmid {
+    border: 0px solid black; /* 保持无边框 */
+    color: #2c3e50; /* 深蓝色文本，北欧风格的深色调，易读且现代 */
+    text-align: center; /* 保持文本居中 */
+    font-weight: 300; /* 轻质加粗，北欧风格的极简感，替换原 bold */
+    margin: auto; /* 保持自动外边距，居中对齐元素 */
+    font-family: 'Roboto', sans-serif; /* 现代无衬线字体，简约清晰 */
+    font-size: 36px; /* 增大字体大小以突出标题，保持现代感 */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* 柔和的黑色半透明阴影，现代简约 */
+    padding: 20px 0; /* 增加上下内边距，营造空间感 */
+    max-width: 800px; /* 限制宽度，保持居中效果 */
+}
+
+/* 表格样式 - 优化 .tab 和相关元素 */
+.tab {
+    font-weight: 300; /* 轻质字体，北欧风格 */
+    margin: auto;
+    width: 35%;
+    text-align: center;
+    margin-bottom: 20px; /* 增加下外边距，空间感 */
+}
+
+.tab tr {
+    border: 1px solid transparent; /* 移除黑色边框，使用透明边框，北欧风格简约 */
+    border-radius: 8px; /* 轻微圆角，现代感 */
+    background-color: #ecf0f1; /* 浅灰背景，北欧风格的柔和色调，替换 #FFE5CC */
+    font-size: 20px; /* 稍微减小字体大小，保持协调 */
+    padding: 10px 0; /* 调整内边距，移除 float 和不必要的 padding-left */
+    margin-bottom: 15px; /* 增加下外边距 */
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 轻微阴影，现代简约 */
+}
+
+/* 链接样式 - 优化悬停和默认状态 */
+a:hover {
+    color: #3498db; /* 浅蓝色悬停效果，北欧风格的点缀色，替换红色 */
+}
+
+a:link {
+    color: #2c3e50; /* 深蓝色链接，北欧风格的深色调 */
+    text-decoration: none; /* 移除下划线 */
+}
+
+/* 导航栏样式 - 优化 header nav */
+header nav {
+    background-color: #2c3e50 !important; /* 深蓝色导航栏，北欧风格深色调 */
+    padding: 1rem 2rem; /* 增加内边距，营造空间感 */
+}
+
+header nav .navbar-brand img {
+    
+    
+    width: 60px; /* 确保宽度设置 */
+    height: 30px; /* 确保高度设置 */
+    object-fit: contain; /* 保持比例，填充容器 */
+    
+}
+
+header nav .nav-link {
+    color: #ecf0f1 !important; /* 浅灰色导航链接，北欧风格的柔和对比 */
+    font-weight: 300; /* 轻质字体，简约感 */
+    transition: color 0.3s ease; /* 平滑过渡效果 */
+    padding: 0.5rem 1rem; /* 调整内边距，保持一致 */
+}
+
+header nav .nav-link:hover {
+    color: #3498db !important; /* 浅蓝色悬停效果，北欧风格的点缀色 */
+    border-bottom: 2px solid #3498db; /* 替换黄色为浅蓝色，保持简约 */
+    border-radius: 4px; /* 轻微圆角，现代感 */
+    padding-bottom: 2px; /* 保持原有的底部填充 */
+}
+
+header nav li {
+    display: inline-block; /* 替换 float:left 为 inline-block，防止布局问题 */
+    height: 80%;
+    margin-right: 20px;
+    padding-left: 10px;
+}
+
+header nav li a.active {
+    border-bottom: 2px solid #3498db; /* 替换黄色为浅蓝色 */
+    border-radius: 4px;
+    color: #3498db;
+    padding-bottom: 2px;
+}
+
+/* 内容部分样式 - 增加介绍内容、卡片和按钮 */
+.container {
+    max-width: 1200px; /* 限制容器宽度，保持简约布局 */
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #7f8c8d; /* 柔和的灰色，北欧风格的辅助色 */
+}
+
+.btn-outline-primary {
+    border-color: #3498db; /* 浅蓝色边框，北欧风格的点缀色 */
+    color: #3498db;
+    font-weight: 300;
+    padding: 12px 30px; /* 增加按钮内边距，现代感 */
+    transition: all 0.3s ease; /* 平滑过渡效果 */
+}
+
+.btn-outline-primary:hover {
+    background-color: #3498db; /* 悬停时填充浅蓝色 */
+    color: #fff;
+    border-color: #3498db;
+}
+
+.btn-outline-secondary {
+    border-color: #7f8c8d; /* 柔和灰色边框，辅助按钮 */
+    color: #7f8c8d;
+    font-weight: 300;
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #7f8c8d;
+    color: #fff;
+    border-color: #7f8c8d;
+}
+
+.card {
+    border: none; /* 移除默认边框，简约感 */
+    background-color: #ffffff; /* 白色卡片背景 */
+    border-radius: 8px; /* 轻微圆角，现代感 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 轻微阴影，现代简约 */
+}
+
+.card-title {
+    font-weight: 400; /* 稍微加粗标题，保持简约 */
+    color: #2c3e50;
+    font-size: 1.25rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.h3, .h2 {
+    font-weight: 300; /* 轻质标题，北欧风格 */
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    #topmid {
+        font-size: 28px; /* 在小屏幕上缩小标题 */
+    }
+    .tab {
+        width: 80%; /* 在小屏幕上扩大表格宽度 */
+    }
+    header nav .nav-link {
+        padding: 0.3rem 0.5rem; /* 调整导航链接内边距 */
+    }
+    header nav li {
+        margin-right: 10px; /* 减少导航项间距 */
+    }
+    .card {
+        margin-bottom: 1rem; /* 增加卡片间距 */
+    }
+    .btn-lg {
+        font-size: 1rem; /* 调整按钮大小 */
+    }
+}
+/*    */
